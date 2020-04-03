@@ -1,0 +1,109 @@
+/* 
+Kai Brach
+brizk design (www.brizk.com)
+*/
+/* Basics ######################################################### */
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+table,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(unnamed.png) center top no-repeat, url(../../pix/bottom.png) center bottom no-repeat fixed;
+  background-size: 712px 616px, 90px 70px;
+  background-color: #f6f6ea;
+}
+.wrap {
+  width: 800px;
+  margin: 400px auto 0 auto;
+  padding: 0 25px 50px 25px;
+}
+h1 {
+  font-size: 7em;
+  padding: 0;
+  margin: 0 0 20px 0;
+  line-height: .85em;
+  font-weight: 100;
+  display: inline-block;
+}
+h1 span {
+  display: block;
+  padding: 0 0 10px 0;
+  border-bottom: 5px solid #000;
+}
+h2 {
+  font-size: 1.8em;
+  line-height: 1.2em;
+  font-style: italic;
+  font-weight: normal;
+  width: 250px;
+  padding: 20px 0 0 0;
+}
+div.intro {
+  float: left;
+}
+div.info {
+  float: right;
+  padding: 46px 0 0 0;
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.8);
+  width: 180px;
+  line-height: 1.5em;
+}
+div.info p {
+  padding-bottom: 20px;
+}
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: underline;
+}
+a:hover {
+  color: #000;
+}
+/* layouts smaller than 600px, iPhone and mobiles*/
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 500px) {
+  body {
+    background-size: 356px 308px, 90px 70px;
+  }
+  .wrap {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 250px;
+    padding: 0 0 80px 0;
+  }
+  h1 {
+    font-size: 5em;
+  }
+  div.intro {
+    float: none;
+  }
+  div.info {
+    float: none;
+    width: auto;
+    padding-top: 25px;
+  }
+}
